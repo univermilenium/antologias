@@ -49,5 +49,11 @@ function ter_ses(){
 }
 
 function get_tex(car){
-	
+	$.post("func.php",{act:"get_tex",CARRERA:car}, function(data){
+		$('#tb_tex').html(data);
+	});
+}
+
+function get_doc(d,n){
+	window.open("func.php?act=get_doc&d="+d+"&n="+n,'docsuniver');
 }
