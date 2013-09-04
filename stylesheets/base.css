@@ -268,7 +268,7 @@
 
 /* Agregado por Pablo César Sánchez Porta
 ============================================== */
-.error { padding:10px; background:#FF9797; color:#FFF; font-family:Verdana, Geneva, sans-serif; font-size:14px; display:none; }
+.error { padding:10px; background:#FF9797; color:#FFF; font-family:Verdana; font-size:14px; display:none; }
 .tb_tex{ margin-left:2.5%;}
 .tb_tex th{ padding: 10px; }
 .tb_tex tr:hover { background:#CCE6FF; cursor:default; }
