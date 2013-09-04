@@ -21,3 +21,29 @@ label
 	color: #0170c1;
 	text-align:justify
 }
+
+h4.username 
+{
+    font-family: Trebuchet MS !important; 
+	font-size: 21px;
+	color: #0170c1;
+	text-align:justify
+}
+
+
+
+table.tb_tex
+{
+	border: solid 2px #0170c1;
+	width: 100%;
+}
+
+
+
+table.tb_tex tbody tr th
+{
+	background-color:#0170c1;
+	color:#ffffff !important;
+	text-align:center;
+	font-style:bold;
+}
