@@ -38,12 +38,16 @@ function ini_ses(){
 }
 
 function ter_ses(){
-	$.post("func.php",{},function (data){
-		$('#sess').reset();
+	$.post("func.php",{act:"ter_ses"},function (data){
+		document.sess.reset();
 		$('#carrera').html('');
-		$('#error').html('');
+		$('#error').hide();
 		$('#antologias').slideUp();
 		$('#well').slideDown();
 		$('#aut').slideDown();
 	});
+}
+
+function get_tex(car){
+	
 }
