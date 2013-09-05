@@ -27,7 +27,9 @@ if($_POST['act']=="get_car"){
 		foreach($i as $c=>$v) $_SESSION[$c] = $v;
 		$_SESSION['antologias'] = "activa";
 		echo '<input type="button" value="Terminar Sesión" onClick="ter_ses();" style="float:right;"> <input type="button" value="Actualizar" onClick="get_tex(\''.$_POST['CARRERA'].'\');" style="float:right;">';
-		echo utf8_encode("<h4 class='username'>Bienvenido $i[NOMBRE] $i[PATERNO] $i[MATERNO]</h4><hr><div id=\"tb_tex\" style=\"text-align:center;\"></div>");
+		echo utf8_encode("<h4 class='username'>Bienvenido $i[NOMBRE] $i[PATERNO] $i[MATERNO]</h4>");
+		echo "<p style=\"clear:both;\">Todos los archivos en este sitio están en formato PDF, para visualizarlos es necesario disponer de algún visor de este formato, en caso de no contar con él, puedes descargarlo a través del siguiente enlace:  
+<a href=\"http://get.adobe.com/es/reader/\">http://get.adobe.com/es/reader/</a></p><hr><div id=\"tb_tex\" style=\"text-align:center;\"></div>";
 		echo "<script> $('#well').slideUp();\n $('#aut').slideUp();\n $('#antologias').slideDown();\n get_tex('$_POST[CARRERA]'); </script>";
 	}
 }elseif($_SESSION['antologias']=="activa"){
