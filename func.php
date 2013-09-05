@@ -2,7 +2,7 @@
 //Configuracion
 $ht="localhost";
 $dbus="root";
-$dbps="pablito";
+$dbps="mysql";
 $db = "antologias";
 mysql_connect($ht,$dbus,$dbps) or die('¡No se puede realizar la conexión con la base de datos!');
 mysql_select_db($db) or die('¡No se puede seleccionar la base de datos!');

@@ -50,7 +50,7 @@ table.tb_tex tbody tr th
 
 /* Agregado por Pablo César Sánchez Porta
 ============================================== */
-.error { padding:10px; background:#fc3a3a !important; color:#FFF !important; font-family:Verdana; font-size:14px; display:none !important; }
+.error { padding:10px; background:#fc3a3a ; color:#FFF ; font-family:Verdana; font-size:14px; display:none; }
 .tb_tex{ margin-left:2.5%;}
 .tb_tex th{ padding: 10px; }
 .tb_tex tr:hover { background:#e5ecf4; cursor:default; }
