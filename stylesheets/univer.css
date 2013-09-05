@@ -6,6 +6,33 @@ p
 	text-align:justify
 }
 
+a:link 
+{
+	text-decoration: none;
+	text-align:left
+}
+
+a:visited 
+{
+	text-decoration: none;
+	color: #0170c1;
+}
+
+a:hover 
+{
+	text-decoration: none;
+	color: #2694e4;
+}
+
+a:active 
+{
+	text-decoration: none;
+	color: #0170c1;
+	text-align:left
+}
+
+
+
 label
 {
 	font-family: Verdana;
