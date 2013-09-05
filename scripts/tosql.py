@@ -10,4 +10,4 @@ def printlistfiles(pattern):
         print "INSERT INTO documentos (id_lic, grado, materia, clave, autor, ruta) VALUES (1, 'GRADO', 'PEDAGOGIA', 'CLAVEDPEDAGOGIA', 'autor', '/pedagogia/%s');" % filename
 
 if __name__ == "__main__":
-    printlistfiles("/home/moises/apps/repos/antologias/files/pedagogia/*.txt")
+    printlistfiles("/home/moises/apps/repos/antologias/files/pedagogia/*.pdf")
