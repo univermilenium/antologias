@@ -36,9 +36,9 @@ if($_POST['act']=="get_car"){
 		$tex=mysql_query("select carreras.DESCRIPCION, documentos.* from documentos, carreras where documentos.CARRERA=carreras.CARRERA and carreras.PLANTEL=$_SESSION[PLANTEL] and documentos.CARRERA = '$_POST[CARRERA]' order by AUTOR");
 		if(mysql_num_rows($tex)==0) echo "<h2>No existen documentos para esta licenciatura.</h2>";
 		else{
-			  echo '<table id="resultados" class="tb_tex"><tr><th>LICENCIATURA</th><th>CUATRIMESTRE</th><th>MATERIA</th><th>CLAVE</th><th>&nbsp;</th></tr>';
+			  echo '<table id="resultados" class="tb_tex"><tr><th>LICENCIATURA</th><th>CUATRIMESTRE</th><th>CLAVE MATERIA</th><th>&nbsp;</th></tr>';
 			while($t=mysql_fetch_array($tex)){
-				echo '<tr><td>'.$t['DESCRIPCION'].'</td><td>'.$t['GRADO'].'</td><td>'.$t['MATERIA'].'</td><td>'.$t['CLAVE'].'</td><td><input type="button" value="Descargar" onClick="get_doc(\''.$t['RUTA'].'\',\''.$t['ID_DOC'].'\')"></td></tr>';
+				echo '<tr><td>'.$t['DESCRIPCION'].'</td><td>'.$t['GRADO'].'</td><td>'.$t['CLAVE'].'</td><td><input type="button" value="Descargar" onClick="get_doc(\''.$t['RUTA'].'\',\''.$t['ID_DOC'].'\')"></td></tr>';
 			}
 			echo '</table>';
 		}
