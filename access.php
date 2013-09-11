@@ -1,5 +1,5 @@
 <?php
 	$ht="localhost";
 	$dbus="root";
-	$dbps="mysql";
+	$dbps="pablito";
 	$db = "antologias";

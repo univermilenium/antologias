@@ -45,7 +45,7 @@ if($_POST['act']=="get_car"){
 		}
 	}elseif($_GET['act']=="get_doc"){
 		mysql_query("insert into descargas (ID_MAT, DOC) values ('$_SESSION[ID_MAT]', '$_GET[n]')");
-		$f='files'.$_GET['d'];
+		$f='files'.trim($_GET['d']);
 		header("Location: $f");
 	}
 }else{

@@ -7,7 +7,7 @@
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
-	<title>Univer Milenium - Textos Básicos</title>
+	<title>Univer Milenium - Administrador Textos Básicos</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 
@@ -33,7 +33,7 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 <script src="js/jquery.js"></script>
-<script src="js/script.js"></script>
+<script src="js/admin.js"></script>
 </head>
 <body>
 
@@ -50,11 +50,8 @@
 			<hr />
 		</div>
 		<div class="one-third column" id="well">
-			<h3 class="Subtitle">Bienvenido</h3>
-			<p>En este sitio podrás descargar los textos básicos que utilizarás para estudiar tus materias.</p>
-			<p>Es necesario que proporciones tu número de matrícula y selecciones el plantel, así como la licenciatura que estás cursando.</p>
-            <p>Todos los archivos en este sitio están en formato PDF, para visualizarlos es necesario disponer de algún visor de este formato, en caso de no contar con él, puedes descargarlo a través del siguiente enlace:<br>
-<a href="http://get.adobe.com/es/reader/" target="_blank">http://get.adobe.com/es/reader/</a></p>
+			<h3 class="Subtitle">Administrador Textos Básicos</h3>
+			<p>Para entrar a esta aplicación debes contar con usuario y contraseña.		</p>
 		</div>
 		<div class="one-third column" id="aut">
 			<h3 class="Subtitle">Autenticación</h3>
@@ -62,26 +59,14 @@
             
             </div>
 			<form name="sess" id="sess" onSubmit="return false">
-            <label>Matrícula: 
-            <input type="text" name="matricula" id="matricula" onKeyPress="return numeros(event);" maxlength="12"></label>
+            <label>Usuario: 
+              <input type="text" name="matricula" id="matricula" maxlength="15"></label>
             <label>
-            Plantel:
-            <select name="plantel" id="plantel" onChange="get_car(this.value);">
-              <option value="">Selecciona un plantel</option>
-              <option value="1">Rayón</option>
-              <option value="2">Nezahualcóyotl</option>
-              <option value="3">Ixtapaluca</option>
-              <option value="4">Hidalgo</option>
-              <option value="5">Salud</option>
-              <option value="6">Ecatepec</option>
-            </select>
+            Contraseña:
+              <input type="password" name="matricula" id="matricula" maxlength="15">
             </label>
-            <label>
-            Licenciatura:
-            <select name="carrera" id="carrera">
-            </select>
-            </label>
-            <input type="submit" value="Entrar" onClick="ini_ses()">
+           
+            <input type="submit" value="Entrar" onClick="ini_adm()">
           </form>
 		</div>
         <div style="clear:both; display:none;" class="full-width" id="antologias">
