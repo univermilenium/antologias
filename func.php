@@ -24,6 +24,7 @@ if($_POST['act']=="get_car"){
 		mysql_query("insert into log (ID_MAT, PLANTEL, CARRERA) values ($i[ID_MAT],$_POST[PLANTEL], '$_POST[CARRERA]')");
 		foreach($i as $c=>$v) $_SESSION[$c] = $v;
 		$_SESSION['antologias'] = "activa";
+		$_SESSION['PLANTEL'] = $_POST['PLANTEL'];
 		echo '<input type="button" value="Terminar Sesión" onClick="ter_ses();" style="float:right;"> <input type="button" value="Actualizar" onClick="get_tex(\''.$_POST['CARRERA'].'\');" style="float:right;">';
 		echo utf8_encode("<h4 class='username'>Bienvenido $i[NOMBRE] $i[PATERNO] $i[MATERNO]</h4>");
 		echo "<p style=\"clear:both;\">Todos los archivos en este sitio están en formato PDF, para visualizarlos es necesario disponer de algún visor de este formato, en caso de no contar con él, puedes descargarlo a través del siguiente enlace:  
@@ -33,12 +34,12 @@ if($_POST['act']=="get_car"){
 }elseif($_SESSION['antologias']=="activa"){
 	if($_POST['act']=="ter_ses") session_destroy();
 	elseif($_POST['act']=="get_tex"){
-		$tex=mysql_query("select carreras.DESCRIPCION, documentos.* from documentos, carreras where documentos.CARRERA=carreras.CARRERA and carreras.PLANTEL=$_SESSION[PLANTEL] and documentos.CARRERA = '$_POST[CARRERA]' order by AUTOR");
+		$tex=mysql_query("select carreras.DESCRIPCION, documentos.* from documentos, carreras where documentos.CARRERA=carreras.CARRERA and carreras.PLANTEL=$_SESSION[PLANTEL] and documentos.CARRERA = '$_POST[CARRERA]' order by GRADO,AUTOR");
 		if(mysql_num_rows($tex)==0) echo "<h2>No existen documentos para esta licenciatura.</h2>";
 		else{
-			  echo '<table id="resultados" class="tb_tex"><tr><th>LICENCIATURA</th><th>CUATRIMESTRE</th><th>CLAVE MATERIA</th><th>&nbsp;</th></tr>';
+			  echo '<table id="resultados" class="tb_tex"><tr><th>LICENCIATURA</th><th>CUATRIMESTRE</th><th>MATERIA</th><th>CLAVE MATERIA</th><th>&nbsp;</th></tr>';
 			while($t=mysql_fetch_array($tex)){
-				echo '<tr><td>'.$t['DESCRIPCION'].'</td><td>'.$t['GRADO'].'</td><td>'.$t['CLAVE'].'</td><td><input type="button" value="Descargar" onClick="get_doc(\''.$t['RUTA'].'\',\''.$t['ID_DOC'].'\')"></td></tr>';
+				echo '<tr><td>'.$t['DESCRIPCION'].'</td><td>'.$t['GRADO'].'</td><td>'.$t['MATERIA'].'</td><td>'.$t['CLAVE'].'</td><td><input type="button" value="Descargar" onClick="get_doc(\''.$t['RUTA'].'\',\''.$t['ID_DOC'].'\')"></td></tr>';
 			}
 			echo '</table>';
 		}
