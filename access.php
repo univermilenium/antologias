@@ -1,5 +1,6 @@
-<?php
+<?php  error_reporting(0);
 	$ht="localhost";
-	$dbus="root";
-	$dbps="pablito";
-	$db = "antologias";
+	$dbus="onlineun_textos";
+	$dbps="Textosbasicos01$";
+	$db = "onlineun_textosbasicos";
+?>

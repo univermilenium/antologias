@@ -48,6 +48,14 @@ label
 	text-align:justify
 }
 
+.Subtitle2
+{
+	font-family: Trebuchet MS; 
+	font-size: 18px;
+	color: #0170b0;
+	text-align:justify
+}
+
 h4.username 
 {
     font-family: Trebuchet MS !important; 
