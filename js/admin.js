@@ -16,8 +16,9 @@ function ini_adm(){
 }
 
 function fun(p,v,d){
-	
+	$('#loading').show();
 	$.post("rep.php",{p:p,v:v},function(data){
 		 $('#'+d).html(data);
-	});
+	})
+	.done(function(){$('#loading').hide();});
 }

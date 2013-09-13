@@ -6,7 +6,7 @@ mysql_select_db($db) or die('¡No se puede seleccionar la base de datos!');
 
 $planteles=array(1=>"Rayón", 2=>'Nezahualcoyotl', 3=>'Iztapaluca', 4=>'Hidalgo', 5=>'Salud', 6=>'Ecatepec');
 
-$mnu=array('get_rep'=>'Reportes', 'get_doc'=>'Administrar Documentos', 'get_usr'=>'Administrar usuarios');
+$mnu=array('get_rep'=>'Reportes', 'get_doc'=>'Documentos', 'get_usr'=>'Usuarios');
 
 $no=array('á', 'é', 'í', 'ó', 'ú', 'ñ', 'Á', 'É', 'Í', 'Ó', 'Ú', 'Ñ', '-', ' ', '__', '._', '_.', '..', '__');
 $si=array('a', 'e', 'i', 'o', 'u', 'n', 'a', 'e', 'i', 'o', 'u', 'n', '_', '_', '_', '.', '.', '.', '_');
@@ -20,7 +20,7 @@ if($_POST['act']=="ini_adm"){
 		$_SESSION['admin']="yes";
 		echo '<input type="button" value="Terminar sesión" style="float:right;" onclick="fun(Array(\'act\',\'hola\'), Array(\'ter_adm\',\'probando\'),\'cont\')">';
 		echo utf8_encode("<h3 class=\"Subtitle\">Bienvenido $_SESSION[NOMBRE] $_SESSION[PATERNO] $_SESSION[MATERNO]</h3><hr>");
-		echo '<div id="menu" class="four columns alpha">menu</div><div id="cont" class="twelve columns omega">cargas</div>';
+		echo '<div id="menu" class="two columns alpha">&nbsp;</div><div id="cont" class="fourteen columns omega">El inicio de sesión fue exitoso, utiliza el menú del lado izquierdo para visualizar la información.</div>';
 		echo "<script> $('#well').slideUp();\n $('#aut').slideUp();\n $('#admin').slideDown();\n fun(Array('act'), Array('get_menu'), 'menu'); </script>";
 	}else{
 		echo "<script> $('#error').html('Los datos proporcionados no son correctos, verifíca la información y vuelve a intentarlo'); $('#error').slideDown(); </script>";
@@ -44,14 +44,16 @@ if($_POST['act']=="ini_adm"){
 			$nm++;
 		}
 		
-		//echo "<input type='button' value='Actualizar' onclick=\"fun(Array('act'), Array('get_menu'), 'menu');\"><br>";
+		echo '<center><img src="images/loading_blue.gif" id="loading" style="display:none;"></center>';
 	}elseif($_POST['act']=="get_rep"){
 		$ta=mysql_num_rows(mysql_query("select ID_LOG from log"));
-		$tu=mysql_num_rows(mysql_query("select distinct(ID_MAT) from log"));
-		echo '<div class="six columns alpha"><h2 class="Subtitle2" style="text-align:center">Acceso </h2><ul><li>Total de accesos: <strong>'.$ta.'</strong> <button onclick="fun(Array(\'act\', \'opt\', \'tb\', \'cm\', \'tit\'), Array(\'reporte\', \'ver\', \'log\', \'*\', \'Total de Accesos\'), \'cont\');">Ver</button> <button onclick="fun(Array(\'act\', \'opt\', \'tb\', \'cm\', \'tit\'), Array(\'reporte\', \'descargar\', \'log\', \'*\', \'Total de Accesos\'), \'descarga\');">Descargar</button></li><li>Total de Usuarios: <strong>'.$tu.'</strong> <button onclick="fun(Array(\'act\', \'opt\', \'tb\', \'cm\', \'wr\', \'tit\'), Array(\'reporte\', \'ver\', \'log\', \'distinct(ID_MAT), PLANTEL, CARRERA, FECHA\', \'group by ID_MAT\', \'Total de Usuarios\'), \'cont\');">Ver</button> <button onclick="fun(Array(\'act\', \'opt\', \'tb\', \'cm\', \'wr\', \'tit\'), Array(\'reporte\', \'descargar\', \'log\', \'distinct(ID_MAT), PLANTEL, CARRERA, FECHA\', \'group by ID_MAT\', \'Total de Usuarios\'), \'descarga\');">Descargar</button></li></ul></div>';
+		$tua=mysql_num_rows(mysql_query("select distinct(ID_MAT) from log"));
+		$tu=mysql_num_rows(mysql_query("select ID_MAT from matriculas"));
+		echo '<div class="seven columns alpha"><h2 class="Subtitle2" style="text-align:center">Acceso </h2><ul><li>Total de accesos: <strong>'.$ta.'</strong> <button onclick="fun(Array(\'act\', \'opt\', \'tb\', \'cm\', \'tit\'), Array(\'reporte\', \'ver\', \'log\', \'*\', \'Total de Accesos\'), \'cont\');">Ver</button> <button onclick="fun(Array(\'act\', \'opt\', \'tb\', \'cm\', \'tit\'), Array(\'reporte\', \'descargar\', \'log\', \'*\', \'Total de Accesos\'), \'descarga\');">Descargar</button></li><li>Acceso de Usuarios: <strong>'.$tua.'</strong> de <strong>'.$tu.'</strong> <button onclick="fun(Array(\'act\', \'opt\', \'tb\', \'cm\', \'wr\', \'tit\'), Array(\'reporte\', \'ver\', \'log\', \'distinct(ID_MAT), PLANTEL, CARRERA, FECHA\', \'group by ID_MAT\', \'Total de Usuarios\'), \'cont\');">Ver</button> <button onclick="fun(Array(\'act\', \'opt\', \'tb\', \'cm\', \'wr\', \'tit\'), Array(\'reporte\', \'descargar\', \'log\', \'distinct(ID_MAT), PLANTEL, CARRERA, FECHA\', \'group by ID_MAT\', \'Total de Usuarios\'), \'descarga\');">Descargar</button></li></ul></div>';
 		$tdes=mysql_num_rows(mysql_query("select ID_DES from descargas"));
-		$tdoc=mysql_num_rows(mysql_query("select distinct(DOC) from descargas"));
-		echo '<div class="six columns alpha"><h2 class="Subtitle2" style="text-align:center;">Descargas</h2><ul><li>Total de descargas: <strong>'.$tdes.'</strong> <button onclick="fun(Array(\'act\', \'opt\', \'tb\', \'cm\', \'tit\'), Array(\'reporte\', \'ver\', \'descargas\', \'*\', \'Total de Descargas\'), \'cont\');">Ver</button> <button onclick="fun(Array(\'act\', \'opt\', \'tb\', \'cm\', \'tit\'), Array(\'reporte\', \'descargar\', \'descargas\', \'*\', \'Total de Descargas\'), \'descarga\');">Descargar</button></li><li>Total de documentos: <strong>'.$tdoc.'</strong> <button onclick="fun(Array(\'act\', \'opt\', \'tb\', \'cm\', \'wr\', \'tit\'), Array(\'reporte\', \'ver\', \'descargas, documentos\', \'distinct(DOC), CARRERA, MATERIA, AUTOR\', \'where ID_DOC=DOC group by doc\', \'Total de Descargas\'), \'cont\');">Ver</button> <button onclick="fun(Array(\'act\', \'opt\', \'tb\', \'cm\', \'wr\', \'tit\'), Array(\'reporte\', \'descargar\', \'descargas, documentos\', \'distinct(DOC), CARRERA, MATERIA, AUTOR\', \'where ID_DOC=DOC group by doc\', \'Total de Descargas\'), \'descarga\');">Descargar</button></li></ul></div><div class="clear" id="descarga" style="display:none;"></div>';
+		$tdocd=mysql_num_rows(mysql_query("select distinct(DOC) from descargas"));
+		$tdoc=mysql_num_rows(mysql_query("select ID_DOC from documentos"));
+		echo '<div class="seven columns alpha"><h2 class="Subtitle2" style="text-align:center;">Descargas</h2><ul><li>Total de descargas: <strong>'.$tdes.'</strong> <button onclick="fun(Array(\'act\', \'opt\', \'tb\', \'cm\', \'tit\'), Array(\'reporte\', \'ver\', \'descargas\', \'*\', \'Total de Descargas\'), \'cont\');">Ver</button> <button onclick="fun(Array(\'act\', \'opt\', \'tb\', \'cm\', \'tit\'), Array(\'reporte\', \'descargar\', \'descargas\', \'*\', \'Total de Descargas\'), \'descarga\');">Descargar</button></li><li>Documentos descargados: <strong>'.$tdocd.'</strong> de <strong>'.$tdoc.'</strong> <button onclick="fun(Array(\'act\', \'opt\', \'tb\', \'cm\', \'wr\', \'tit\'), Array(\'reporte\', \'ver\', \'descargas, documentos\', \'distinct(DOC), CARRERA, MATERIA, AUTOR\', \'where ID_DOC=DOC group by doc\', \'Documentos Descargados\'), \'cont\');">Ver</button> <button onclick="fun(Array(\'act\', \'opt\', \'tb\', \'cm\', \'wr\', \'tit\'), Array(\'reporte\', \'descargar\', \'descargas, documentos\', \'distinct(DOC), CARRERA, MATERIA, AUTOR\', \'where ID_DOC=DOC group by doc\', \'Documentos Descargados\'), \'descarga\');">Descargar</button></li></ul></div><div class="clear" id="descarga" style="display:none;"></div>';
 	}elseif($_POST['act']=="reporte"){
 		if(!$_POST['wr']) $wr=''; else $wr=$_POST['wr'];
 		$sql = "select $_POST[cm] from $_POST[tb] $wr";
@@ -82,7 +84,7 @@ if($_POST['act']=="ini_adm"){
 		}
 		$repo.='</table>';
 		if($_POST['opt']=="ver"){
-			echo " <button onclick=\"fun(Array('act'), Array('get_rep'), 'cont')\" style='position: fixed; margin-top: 180px; margin-left: -150px;'>&lt;&lt; Regresar</button>";
+			echo " <button onclick=\"fun(Array('act'), Array('get_rep'), 'cont')\" style='position: fixed; margin-top: 180px; margin-left: -115px;'>&lt;&lt; Regresar</button>";
 			echo '<h2 class="Subtitle" style="text-align:center;">'.$_POST['tit'].'</h2>'.$repo;
 		}elseif($_POST['opt']=="descargar"){
 			echo '<form method="post" name="des" target="_top" action="rep.php">';
