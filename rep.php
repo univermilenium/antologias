@@ -99,6 +99,64 @@ if($_POST['act']=="ini_adm"){
 			header("Content-Disposition: attachment; filename=$name.xls");
 			echo utf8_decode($repo);
 		}else echo "<h2 class='Subtitle2'>¡Esta opción no es válida!</h2>";
+	}elseif($_POST['act']=="get_doc"){
+		echo '<div id="func" class="three columns alpha"><h2 class="Subtitle2" style="margin-bottom:0;">Buscar</h2><form method="post" name="search" id="search" onsubmit="return false;" target="_top"><input type="hidden" name="act" value="search_doc"><input type="hidden" name="orden" id="orden"><input type="hidden" name="opt" value="xls"><label>palabras<input type="text" name="buscar" id="buscar"></label><span style="cursor:pointer; margin-top:-15px; display:block;" id="v_fina" onclick="$(\'#fina\').slideDown(); $(\'#v_fina\').slideUp();"><img src="images/mas.png"> Detalles</span><div id="fina" style="display:none;"><label>Carrera<select name="CARRERA" id="CARRERA"><option value></option>';
+		$car=mysql_query("select distinct carrera from documentos order by carrera");
+		while($ca=mysql_fetch_array($car)) echo "<option value=\"$ca[0]\">$ca[0]</option>";
+		echo '</select></label><label>Cuatrimestre<select name="GRADO" id="GRADO"><option></option>';
+		$gra=mysql_query("select distinct GRADO from documentos order by GRADO");
+		while($gr=mysql_fetch_array($gra)) echo "<option value=\"$gr[0]\">$gr[0]</option>";
+		echo '</select></label><span style="cursor:pointer; margin-top:-15px; display:block;" id="v_fina" onclick="$(\'#fina\').slideUp(); $(\'#v_fina\').slideDown(); if($(\'#CARRERA\').val()!=\'\' || $(\'#GRADO\').val()!=\'\'){ $(\'#CARRERA\').val(\'\'); $(\'#GRADO\').val(\'\'); efor(\'search\',\'resu\'); }"><img src="images/menos.png"> Ocultar</span></div><button onclick="efor(this.form.id,\'resu\')">Buscar</button></form><button onclick="fun(Array(\'act\'), Array(\'form_doc\'), \'resu\');">Agregar documento</button></div><div id="resu" class="eleven columns omega" style="overflow-x:auto; overflow-y:auto;">&nbsp;</div><div id="descarga" style="display:none;"></div><script>efor(\'search\',\'resu\')</script>';
+	}elseif($_POST['act']=="search_doc"){
+		$name=''; $tb='documentos'; $cm='*';
+		if($_POST['buscar']!=''){
+			$wr['buscar']=$_POST['buscar'];
+			$name.="_$_POST[buscar]";
+		}
+		if($_POST['CARRERA']!=''){
+			$wr['CARRERA']=$_POST['CARRERA'];
+			$name.="_$_POST[CARRERA]";
+		}
+		if($_POST['GRADO']!=''){
+			$wr['GRADO']=$_POST['GRADO'];
+			$name.="_$_POST[GRADO]";
+		}
+		foreach($wr as $p=>$o){ $nw++;
+			if($nw==1) $whr="where "; else $whr.="and ";
+			if($p=="buscar") $whr.="(MATERIA LIKE '%$o%' OR AUTOR LIKE '%$o%' OR RUTA LIKE '%$o%' OR CLAVE LIKE '&$o&') ";
+			else $whr.="$p = '$o' ";
+		}
+		if(!$_POST['orden']) $orden=''; else $orden = "order by $_POST[orden]";
+		$sql="select $cm from $tb $whr $orden";
+		$enc = mysql_fetch_array(mysql_query($sql." limit 1"));
+		$en='<tr>';
+		foreach($enc as $n=>$mv) if(!is_numeric($n)){$ne++;
+			$en.="<th style='cursor:pointer'";
+			if($ne!=1) $en.="title='ordenar por $n' onclick=\"$('#orden').val('".$n."'); efor('search', 'resu');\"";
+			$en.=">$n</th>";
+		}
+		$en.='</tr>';
+		$fil = mysql_query($sql);
+		$nfil = mysql_num_rows($fil);
+		while($f=mysql_fetch_array($fil)){
+			$fi.="<tr>";
+			foreach($f as $n=>$v) if(!is_numeric($n)){
+				if($n=='ID_DOC') $fi.='<td><img src="images/editar.png" style="cursor:pointer;" title="Editar" onclick="fun(Array(\'act\', \'ID_DOC\'), Array(\'form_doc\', \''.$v.'\'), \'resu\');"><img src="images/borrar.png" style="cursor:pointer;" title="Borrar" onclick="if(confirm(\'¿Deseas borrar '.$f['CLAVE'].'?\')) alert(\'borralo\'); "></td>';
+				else $fi.="<td>&nbsp;$v</td>";	
+			}
+			$fi.="</tr>";
+		}
+		if($nfil==0) echo '<h2 class="Subtitle" style="text-align:center;">La busqueda no ofrece resultados</h2>';
+		else echo '<button style="position:absolute; margin-left:-180px; margin-top:-25px;" title="'.$nfil.' documentos encontrados" onclick="fun(Array(\'act\', \'opt\', \'tb\', \'cm\', \'wr\', \'tit\'), Array(\'reporte\', \'descargar\', \''.$tb.'\', \''.$cm.'\', \''.str_replace("'","\'",$whr).'\', \'docs'.$name.'\'), \'descarga\')">Descargar Reporte ('.$nfil.')</button><table class="tb_tex">'.str_replace('ID_DOC','&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',$en).$fi.'</table>';
+	}elseif($_POST['act']=="form_doc"){
+		if(!$_POST['ID_DOC']){
+			$h2="Agregar documento";
+		}else{
+			$h2="Editar documento";
+			$doc=mysql_fetch_array(mysql_query("select * from documentos where ID_DOC = $_POST[ID_DOC]"));
+		}
+		echo '<div class="ten columns omega"><h2 class="Subtitle2">'.$h2.'</h2><form name="oper_doc" id="oper_doc" method="post" enctype="multipart/form-data" target="op_doc"><input type="hidden" name="act" value="op_doc"><input type="hidden" name="ID_DOC" value="'.$doc['ID_DOC'].'"><label id="l_CARRERA">Carrera</label><label>Cuatrimestre<input type="text" name="GRADO" id="GRADO" onkeypress="return numeros(event)" value="'.$doc['GRADO'].'"></label><label>Materia<input type="text" name="MATERIA" id="MATERIA" value="'.$doc['MATERIA'].'"></label><label></label><label>Adjuntar archivo<br><input type="file" name="docum" id="docum"></label><input type="submit" value="Guardar"></form></div><iframe name="op_doc" id="op_doc" frameborder="0" style="display:none;"></iframe>';
+	}elseif($_POST['act']=="op_doc"){
 	}else echo "<h2 class='Subtitle2'>¡Esta opción aún no esta disponible!</h2>";
 }else echo "<h1>Acceso no autorizado</h1>";
 
