@@ -27,7 +27,12 @@ if($_POST['act']=="ini_adm"){
 	}
 }elseif($_SESSION['admin']=="yes"){
 	if(!$_POST['act']) $_POST=array_combine($_POST['p'],$_POST['v']);
-	if($_POST['act']=="ter_adm"){
+	if($_POST['act']=="val_ses"){
+		echo '<input type="button" value="Terminar sesión" style="float:right;" onclick="fun(Array(\'act\',\'hola\'), Array(\'ter_adm\',\'probando\'),\'cont\')">';
+		echo utf8_encode("<h3 class=\"Subtitle\">Bienvenido $_SESSION[NOMBRE] $_SESSION[PATERNO] $_SESSION[MATERNO]</h3><hr>");
+		echo '<div id="menu" class="two columns alpha">&nbsp;</div><div id="cont" class="fourteen columns omega">El inicio de sesión fue exitoso, utiliza el menú del lado izquierdo para visualizar la información.</div>';
+		echo "<script> $('#well').slideUp();\n $('#aut').slideUp();\n $('#admin').slideDown();\n fun(Array('act'), Array('get_menu'), 'menu'); </script>";
+	}elseif($_POST['act']=="ter_adm"){
 		session_destroy();
 		echo "<script>document.sess.reset();
 		$('#error').hide();
@@ -155,8 +160,24 @@ if($_POST['act']=="ini_adm"){
 			$h2="Editar documento";
 			$doc=mysql_fetch_array(mysql_query("select * from documentos where ID_DOC = $_POST[ID_DOC]"));
 		}
-		echo '<div class="ten columns omega"><h2 class="Subtitle2">'.$h2.'</h2><form name="oper_doc" id="oper_doc" method="post" enctype="multipart/form-data" target="op_doc"><input type="hidden" name="act" value="op_doc"><input type="hidden" name="ID_DOC" value="'.$doc['ID_DOC'].'"><label id="l_CARRERA">Carrera</label><label>Cuatrimestre<input type="text" name="GRADO" id="GRADO" onkeypress="return numeros(event)" value="'.$doc['GRADO'].'"></label><label>Materia<input type="text" name="MATERIA" id="MATERIA" value="'.$doc['MATERIA'].'"></label><label></label><label>Adjuntar archivo<br><input type="file" name="docum" id="docum"></label><input type="submit" value="Guardar"></form></div><iframe name="op_doc" id="op_doc" frameborder="0" style="display:none;"></iframe>';
+		echo '<div class="ten columns omega"><h2 class="Subtitle2">'.$h2.'</h2><form name="oper_doc" id="oper_doc" method="post" enctype="multipart/form-data" target="op_doc" action="rep.php"><input type="hidden" name="act" value="op_doc"><input type="hidden" name="ID_DOC" value="'.$doc['ID_DOC'].'"><label style="float:left; margin-right:20px;">Carrera<select name="CARRERA" id="CARRERA"><option></option>';
+		$carrs=mysql_query("select distinct(CARRERA), DESCRIPCION FROM carreras GROUP BY CARRERA ORDER BY CARRERA");
+		while($car=mysql_fetch_array($carrs)){
+			echo '<option value="'.$car[0].'" ';
+			if($doc['CARRERA']==$car[0]) echo "selected";
+			echo  '>'.$car[1].'</option>';
+		}
+		echo '</select></label><label>Cuatrimestre<input type="text" name="GRADO" id="GRADO" onkeypress="return numeros(event)" value="'.$doc['GRADO'].'" maxlength="2"></label><label style="float:left; margin-right:20px;">Materia<input type="text" name="MATERIA" id="MATERIA" value="'.$doc['MATERIA'].'"></label><label>Clave <input type="text" name="CLAVE" id="CLAVE" value="'.$doc['CLAVE'].'"></label><label style="float:left; margin-right:20px;">Autor<input type="text" name="AUTOR" id="AUTOR" value="'.$doc['AUTOR'].'"></label>';
+		if($doc['RUTA']!=''){
+			if(is_file('files'.$doc['RUTA'])) echo '<a href="files'.$doc['RUTA'].'" target="_blank">Ver documento</a>';
+			else echo '<span class="error" style="display:inline !important;">El documento no se encuentra en el servidor</span>';
+			$ndr=mysql_num_rows(mysql_query("select ID_DOC from documentos where ruta = '$doc[RUTA]'"))-1;
+			if($ndr>=1) echo '<label><input type="hidden" name="RUTA" id="RUTA" value="'.$doc['RUTA'].'"><input type="checkbox" name="conservar" id="conservar" value="1"> Conservar documento actual, este documento se encuaentra relacionado con <strong>'.$ndr.'</strong> documento(s).</label>';
+		}
+		echo '<label style="clear:both;">Adjuntar archivo<br><input type="file" name="docum" id="docum"></label><input type="submit" value="Guardar" onclick="$(\'#loading\').show();"></form></div><iframe name="op_doc" id="op_doc" frameborder="0" style="display:none;"></iframe>';
 	}elseif($_POST['act']=="op_doc"){
+		
+		echo "<script> window.parent.$('#loading').hide();</script>";
 	}else echo "<h2 class='Subtitle2'>¡Esta opción aún no esta disponible!</h2>";
 }else echo "<h1>Acceso no autorizado</h1>";
 
