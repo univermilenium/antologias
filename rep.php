@@ -66,7 +66,7 @@ if($_POST['act']=="ini_adm"){
 		$ta=mysql_num_rows(mysql_query("select ID_LOG from log"));
 		$tua=mysql_num_rows(mysql_query("select distinct(ID_MAT) from log"));
 		$tu=mysql_num_rows(mysql_query("select ID_MAT from matriculas"));
-		echo '<div class="seven columns alpha"><h2 class="Subtitle2" style="text-align:center">Acceso </h2><ul><li>Total de accesos: <strong>'.$ta.'</strong> <button onclick="fun(Array(\'act\', \'opt\', \'tb\', \'cm\', \'tit\'), Array(\'reporte\', \'ver\', \'log\', \'*\', \'Total de Accesos\'), \'cont\');">Ver</button> <button onclick="fun(Array(\'act\', \'opt\', \'tb\', \'cm\', \'tit\'), Array(\'reporte\', \'descargar\', \'log\', \'*\', \'Total de Accesos\'), \'descarga\');">Descargar</button></li><li>Acceso de Usuarios: <strong>'.$tua.'</strong> de <strong>'.$tu.'</strong> <button onclick="fun(Array(\'act\', \'opt\', \'tb\', \'cm\', \'wr\', \'tit\'), Array(\'reporte\', \'ver\', \'log\', \'distinct(ID_MAT), PLANTEL, CARRERA, FECHA\', \'group by ID_MAT\', \'Total de Usuarios\'), \'cont\');">Ver</button> <button onclick="fun(Array(\'act\', \'opt\', \'tb\', \'cm\', \'wr\', \'tit\'), Array(\'reporte\', \'descargar\', \'log\', \'distinct(ID_MAT), PLANTEL, CARRERA, FECHA\', \'group by ID_MAT\', \'Total de Usuarios\'), \'descarga\');">Descargar</button></li></ul></div>';
+		echo '<div class="seven columns alpha"><h2 class="Subtitle2" style="text-align:center">Acceso </h2><ul><li>Total de accesos: <strong>'.$ta.'</strong> <button onclick="fun(Array(\'act\', \'opt\', \'tb\', \'cm\', \'tit\'), Array(\'reporte\', \'ver\', \'log\', \'*\', \'Total de Accesos\'), \'cont\');">Ver</button> <button onclick="fun(Array(\'act\', \'opt\', \'tb\', \'cm\', \'tit\'), Array(\'reporte\', \'descargar\', \'log\', \'*\', \'Total de Accesos\'), \'descarga\');">Descargar</button></li><li>Acceso de Usuarios: <strong>'.$tua.'</strong> de <strong>'.$tu.'</strong> <button onclick="fun(Array(\'act\', \'opt\', \'tb\', \'cm\', \'wr\', \'tit\'), Array(\'reporte\', \'ver\', \'log\', \'distinct(ID_MAT), PLANTEL, CARRERA, FECHA\', \'group by ID_MAT order by FECHA desc\', \'Acceso de Usuarios\'), \'cont\');">Ver</button> <button onclick="fun(Array(\'act\', \'opt\', \'tb\', \'cm\', \'wr\', \'tit\'), Array(\'reporte\', \'descargar\', \'log\', \'distinct(ID_MAT), PLANTEL, CARRERA, FECHA\', \'group by ID_MAT order by FECHA desc\', \'Acceso de Usuarios\'), \'descarga\');">Descargar</button></li></ul></div>';
 		$tdes=mysql_num_rows(mysql_query("select ID_DES from descargas"));
 		$tdocd=mysql_num_rows(mysql_query("select distinct(DOC) from descargas"));
 		$tdoc=mysql_num_rows(mysql_query("select ID_DOC from documentos"));
@@ -119,9 +119,9 @@ if($_POST['act']=="ini_adm"){
 		}else echo "<h2 class='Subtitle2'>¡Esta opción no es válida!</h2>";
 	}elseif($_POST['act']=="get_doc"){
 		//Construye buscador y contenedores para la vista y administación de documentos
-		echo '<div id="func" class="three columns alpha"><h2 class="Subtitle2" style="margin-bottom:0;">Buscar</h2><form method="post" name="search" id="search" onsubmit="return false;" target="_top"><input type="hidden" name="act" value="search_doc"><input type="hidden" name="orden" id="orden"><input type="hidden" name="opt" value="xls"><label>palabras<input type="text" name="buscar" id="buscar"></label><span style="cursor:pointer; margin-top:-15px; display:block;" id="v_fina" onclick="$(\'#fina\').slideDown(); $(\'#v_fina\').slideUp();"><img src="images/mas.png"> Detalles</span><div id="fina" style="display:none;"><label>Carrera<select name="CARRERA" id="CARRERA"><option value></option>';
-		$car=mysql_query("select distinct carrera from documentos order by carrera");
-		while($ca=mysql_fetch_array($car)) echo "<option value=\"$ca[0]\">$ca[0]</option>";
+		echo '<div id="func" class="three columns alpha"><form method="post" name="search" id="search" onsubmit="return false;" target="_top"><input type="hidden" name="act" value="search_doc"><input type="hidden" name="orden" id="orden"><input type="hidden" name="opt" value="xls"><br><label><span class="Subtitle2">Buscar</span><input type="text" name="buscar" id="buscar"></label><span style="cursor:pointer; margin-top:-15px; display:block;" id="v_fina" onclick="$(\'#fina\').slideDown(); $(\'#v_fina\').slideUp();"><img src="images/mas.png"> Detalles</span><div id="fina" style="display:none;"><label>Carrera<select name="CARRERA" id="CARRERA"><option value></option>';
+		$car=mysql_query("select distinct carrera, descripcion from carreras group by carrera order by carrera");
+		while($ca=mysql_fetch_array($car)) echo "<option value=\"$ca[0]\">$ca[1]</option>";
 		echo '</select></label><label>Cuatrimestre<select name="GRADO" id="GRADO"><option></option>';
 		$gra=mysql_query("select distinct GRADO from documentos order by GRADO");
 		while($gr=mysql_fetch_array($gra)) echo "<option value=\"$gr[0]\">$gr[0]</option>";
@@ -233,7 +233,15 @@ if($_POST['act']=="ini_adm"){
 		if($chk==1) unlink('files'.$_POST['RUTA']);
 		mysql_query("delete from documentos where ID_DOC = $_POST[ID_DOC]");
 		echo "<script>efor('search', 'resu'); alert('¡El documento se borro con éxito!');</script>";
-	}else echo "<h2 class='Subtitle2'>¡Esta opción aún no esta disponible!</h2>"; //Mensaje de error en casoo de que se llame una funcion inexistente
+	}elseif($_POST['act']=="get_usr"){
+		//Construye buscador y contenedores para la vista y administación de usuarios
+		echo '<div id="func" class="three columns alpha"><form method="post" name="search" id="search" onsubmit="return false;" target="_top"><input type="hidden" name="act" value="search_usr"><input type="hidden" name="orden" id="orden"><input type="hidden" name="opt" value="xls"><br><label><span class="Subtitle2">Buscar</span><input type="text" name="buscar" id="buscar"></label><span style="cursor:pointer; margin-top:-15px; display:block;" id="v_fina" onclick="$(\'#fina\').slideDown(); $(\'#v_fina\').slideUp();"><img src="images/mas.png"> Detalles</span><div id="fina" style="display:none;"><label>Plantel<select name="PLANTEL" id="PLANTEL"><option value></option>';
+		foreach($planteles as $nu=>$pl) echo "<option value=\"$nu\">$pl</option>";
+		echo '</select></label><label>Carrera<select name="CARRERA" id="CARRERA"><option></option>';
+		$car=mysql_query("select distinct carrera, descripcion from carreras group by carrera order by carrera");
+		while($ca=mysql_fetch_array($car)) echo "<option value=\"$ca[0]\">$ca[1]</option>";
+		echo '</select></label><span style="cursor:pointer; margin-top:-15px; display:block;" id="v_fina" onclick="$(\'#fina\').slideUp(); $(\'#v_fina\').slideDown(); if($(\'#CARRERA\').val()!=\'\' || $(\'#PLANTEL\').val()!=\'\'){ $(\'#CARRERA\').val(\'\'); $(\'#PLANTEL\').val(\'\'); efor(\'search\',\'resu\'); }"><img src="images/menos.png"> Ocultar</span></div><button onclick="efor(this.form.id,\'resu\')">Buscar</button></form><button onclick="fun(Array(\'act\'), Array(\'form_doc\'), \'resu\');">Agregar documento</button></div><div id="resu" class="eleven columns omega" style="overflow-x:auto; overflow-y:auto;">&nbsp;</div><div id="descarga" style="display:none;"></div><script>efor(\'search\',\'resu\')</script>';
+	}else echo "<h2 class='Subtitle2'>¡Esta opción aún no esta disponible!</h2>"; //Mensaje de error en caso de que se llame una funcion inexistente
 }else echo "<h1>Acceso no autorizado</h1>";
 
 ?>
