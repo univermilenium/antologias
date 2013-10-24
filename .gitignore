@@ -1,4 +1,4 @@
 #ignoring files
 assets/
 files/
-access.php
+*_notes/

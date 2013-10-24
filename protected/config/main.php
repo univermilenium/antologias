@@ -7,7 +7,7 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'Textos Básicos',
+	'name'=>'Administrador http://noble.gle.mx',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -53,10 +53,10 @@ return array(
 		// uncomment the following to use a MySQL database
 		
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=onlineun_textosbasicos',
+			'connectionString' => 'mysql:host=localhost;dbname=glemx_noble',
 			'emulatePrepare' => true,
-			'username' => 'onlineun_textos',
-			'password' => 'Textosbasicos01$',
+			'username' => 'glemx_noble',
+			'password' => 'p4bl1t0',
 			'charset' => 'utf8',
 		),
 		
@@ -85,6 +85,6 @@ return array(
 	// using Yii::app()->params['paramName']
 	'params'=>array(
 		// this is used in contact page
-		'adminEmail'=>'pcsanchez@univermilenium.edu.mx',
+		'adminEmail'=>'pcsp85@gmail.com',
 	),
 );
