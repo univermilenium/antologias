@@ -1,0 +1,1983 @@
+2013/10/22 22:15:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in C:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('gii')
+#1 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/index.php?r=gii
+---
+2013/10/22 22:23:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in C:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/?r=login
+---
+2013/10/23 01:09:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "lang/es".' in C:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('lang/es')
+#1 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/index.php?r=lang/es
+---
+2013/10/23 05:29:46 [error] [php] Undefined variable: model (C:\Users\PabloCesar\Google Drive\proyectos\04 Personales\noble\admin\protected\views\site\login.php:28)
+Stack trace:
+#0 C:\xampp\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\Users\PabloCesar\Google Drive\proyectos\04 Personales\noble\admin\protected\controllers\SiteController.php(32): SiteController->render()
+#3 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\PabloCesar\Google Drive\proyectos\04 Personales\noble\admin\index-test.php(15): CWebApplication->run()
+REQUEST_URI=/admin/index-test.php?r=site/index
+2013/10/23 05:36:57 [error] [php] Undefined variable: _SESSION (C:\Users\PabloCesar\Google Drive\proyectos\04 Personales\noble\admin\protected\controllers\SiteController.php:32)
+Stack trace:
+#0 C:\xampp\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\xampp\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\xampp\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\Users\PabloCesar\Google Drive\proyectos\04 Personales\noble\admin\index-test.php(15): CWebApplication->run()
+REQUEST_URI=/admin/index-test.php
+2013/10/23 05:37:43 [error] [php] Undefined variable: _SESSION (C:\Users\PabloCesar\Google Drive\proyectos\04 Personales\noble\admin\protected\controllers\SiteController.php:32)
+Stack trace:
+#0 C:\xampp\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\xampp\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\xampp\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\Users\PabloCesar\Google Drive\proyectos\04 Personales\noble\admin\index-test.php(15): CWebApplication->run()
+REQUEST_URI=/admin/index-test.php
+2013/10/23 05:40:06 [error] [php] Undefined variable: _SESSION (C:\Users\PabloCesar\Google Drive\proyectos\04 Personales\noble\admin\protected\controllers\SiteController.php:32)
+Stack trace:
+#0 C:\xampp\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\xampp\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\xampp\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\Users\PabloCesar\Google Drive\proyectos\04 Personales\noble\admin\index-test.php(15): CWebApplication->run()
+REQUEST_URI=/admin/index-test.php
+2013/10/23 05:40:14 [error] [php] Undefined variable: _SESSION (C:\Users\PabloCesar\Google Drive\proyectos\04 Personales\noble\admin\protected\controllers\SiteController.php:32)
+Stack trace:
+#0 C:\xampp\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\xampp\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\xampp\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\Users\PabloCesar\Google Drive\proyectos\04 Personales\noble\admin\index-test.php(15): CWebApplication->run()
+REQUEST_URI=/admin/index-test.php
+2013/10/23 05:59:11 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.getIsAuthenticated" is not defined.' in C:\xampp\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\yii\framework\base\CModule.php(105): CComponent->__get('getIsAuthentica...')
+#1 C:\Users\PabloCesar\Google Drive\proyectos\04 Personales\noble\admin\protected\controllers\SiteController.php(33): CModule->__get('getIsAuthentica...')
+#2 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#7 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#8 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\Users\PabloCesar\Google Drive\proyectos\04 Personales\noble\admin\index-test.php(15): CApplication->run()
+#10 {main}
+REQUEST_URI=/admin/index-test.php?r=site/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index-test.php
+---
+2013/10/23 06:00:39 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.autheticate" is not defined.' in C:\xampp\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\yii\framework\base\CModule.php(105): CComponent->__get('autheticate')
+#1 C:\Users\PabloCesar\Google Drive\proyectos\04 Personales\noble\admin\protected\controllers\SiteController.php(33): CModule->__get('autheticate')
+#2 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#7 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#8 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\Users\PabloCesar\Google Drive\proyectos\04 Personales\noble\admin\index-test.php(15): CApplication->run()
+#10 {main}
+REQUEST_URI=/admin/index-test.php?r=site/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index-test.php
+---
+2013/10/23 16:49:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "?r=banners".' in C:\xampp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\yii\framework\web\CController.php(270): CController->missingAction('?r=banners')
+#1 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('?r=banners')
+#2 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/?r=banners')
+#3 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/index.php?r=site/?r=banners
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=site/index
+---
+2013/10/23 16:49:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "?r=banners".' in C:\xampp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\yii\framework\web\CController.php(270): CController->missingAction('?r=banners')
+#1 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('?r=banners')
+#2 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/?r=banners')
+#3 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/index.php?r=site/?r=banners
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=site/index
+---
+2013/10/23 16:52:05 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.isAdmin" is not defined.' in C:\xampp\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CWebUser.php(146): CComponent->__get('isAdmin')
+#1 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\views\layouts\main.php(34): CWebUser->__get('isAdmin')
+#2 C:\xampp\yii\framework\web\CBaseController.php(126): require('C:\Users\E-LEAR...')
+#3 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Users\E-LEAR...', Array, true)
+#4 C:\xampp\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\Users\E-LEAR...', Array, true)
+#5 C:\xampp\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 C:\xampp\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 C:\xampp\yii\framework\web\CBaseController.php(214): COutputProcessor->run()
+#8 C:\xampp\yii\framework\web\CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#9 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#10 C:\xampp\yii\framework\web\CBaseController.php(126): require('C:\Users\E-LEAR...')
+#11 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Users\E-LEAR...', Array, true)
+#12 C:\xampp\yii\framework\web\CController.php(784): CBaseController->renderFile('C:\Users\E-LEAR...', Array, true)
+#13 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\SiteController.php(100): CController->render('login', Array)
+#14 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#15 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#19 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#20 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/admin/index.php?r=site/login
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=site/index
+---
+2013/10/23 17:29:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contenidos".' in C:\xampp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\yii\framework\web\CController.php(270): CController->missingAction('contenidos')
+#1 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('contenidos')
+#2 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('banners/conteni...')
+#3 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/index.php?r=banners/contenidos
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=banners/index
+---
+2013/10/23 17:29:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contenidos".' in C:\xampp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\yii\framework\web\CController.php(270): CController->missingAction('contenidos')
+#1 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('contenidos')
+#2 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/contenidos')
+#3 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/index.php?r=site/contenidos
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=banners/contenidos
+---
+2013/10/23 17:29:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "*".' in C:\xampp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\yii\framework\web\CController.php(270): CController->missingAction('*')
+#1 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('*')
+#2 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('contenidos/*')
+#3 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/index.php?r=contenidos/*
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=logos
+---
+2013/10/23 18:11:02 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.getRoute" is not defined.' in C:\xampp\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\yii\framework\base\CModule.php(105): CComponent->__get('getRoute')
+#1 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php(146): CModule->__get('getRoute')
+#2 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): BannersController->actionAdmin()
+#3 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#12 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('banners/admin')
+#13 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/index.php?r=banners/admin
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=banners/index
+---
+2013/10/23 18:11:24 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.route" is not defined.' in C:\xampp\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\yii\framework\base\CModule.php(105): CComponent->__get('route')
+#1 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php(146): CModule->__get('route')
+#2 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): BannersController->actionAdmin()
+#3 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#12 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('banners/admin')
+#13 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/index.php?r=banners/admin
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=banners/index
+---
+2013/10/23 18:11:43 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.page" is not defined.' in C:\xampp\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\yii\framework\base\CModule.php(105): CComponent->__get('page')
+#1 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php(146): CModule->__get('page')
+#2 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): BannersController->actionAdmin()
+#3 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#12 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('banners/admin')
+#13 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/index.php?r=banners/admin
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=banners/index
+---
+2013/10/23 18:22:06 [error] [php] Array to string conversion (C:\xampp\yii\framework\zii\widgets\CMenu.php:313)
+Stack trace:
+#0 C:\xampp\yii\framework\web\CBaseController.php(147): CMenu->init()
+#1 C:\xampp\yii\framework\web\CBaseController.php(180): BannersController->createWidget()
+#2 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\views\layouts\main.php(40): BannersController->widget()
+#3 C:\xampp\yii\framework\web\CBaseController.php(126): require()
+#4 C:\xampp\yii\framework\web\CBaseController.php(95): BannersController->renderInternal()
+#5 C:\xampp\yii\framework\web\widgets\CContentDecorator.php(76): BannersController->renderFile()
+#6 C:\xampp\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#7 C:\xampp\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#8 C:\xampp\yii\framework\web\CBaseController.php(214): CContentDecorator->run()
+#9 C:\xampp\yii\framework\web\CBaseController.php(308): BannersController->endWidget()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\views\layouts\column2.php(22): BannersController->endContent()
+#11 C:\xampp\yii\framework\web\CBaseController.php(126): require()
+#12 C:\xampp\yii\framework\web\CBaseController.php(95): BannersController->renderInternal()
+#13 C:\xampp\yii\framework\web\CController.php(784): BannersController->renderFile()
+#14 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php(129): BannersController->render()
+#15 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): BannersController->actionIndex()
+#16 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 C:\xampp\yii\framework\web\filters\CFilterChain.php(133): BannersController->runAction()
+#18 C:\xampp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\xampp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#20 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): BannersController->filterAccessControl()
+#21 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#22 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\xampp\yii\framework\web\CController.php(265): BannersController->runActionWithFilters()
+#24 C:\xampp\yii\framework\web\CWebApplication.php(282): BannersController->run()
+#25 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#26 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#27 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/index.php?r=banners/index
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\views\layouts\main.php (40)
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\views\layouts\column2.php (22)
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php (129)
+2013/10/23 18:22:27 [error] [php] Array to string conversion (C:\xampp\yii\framework\zii\widgets\CMenu.php:313)
+Stack trace:
+#0 C:\xampp\yii\framework\web\CBaseController.php(147): CMenu->init()
+#1 C:\xampp\yii\framework\web\CBaseController.php(180): BannersController->createWidget()
+#2 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\views\layouts\main.php(40): BannersController->widget()
+#3 C:\xampp\yii\framework\web\CBaseController.php(126): require()
+#4 C:\xampp\yii\framework\web\CBaseController.php(95): BannersController->renderInternal()
+#5 C:\xampp\yii\framework\web\widgets\CContentDecorator.php(76): BannersController->renderFile()
+#6 C:\xampp\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#7 C:\xampp\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#8 C:\xampp\yii\framework\web\CBaseController.php(214): CContentDecorator->run()
+#9 C:\xampp\yii\framework\web\CBaseController.php(308): BannersController->endWidget()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\views\layouts\column2.php(22): BannersController->endContent()
+#11 C:\xampp\yii\framework\web\CBaseController.php(126): require()
+#12 C:\xampp\yii\framework\web\CBaseController.php(95): BannersController->renderInternal()
+#13 C:\xampp\yii\framework\web\CController.php(784): BannersController->renderFile()
+#14 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php(129): BannersController->render()
+#15 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): BannersController->actionIndex()
+#16 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 C:\xampp\yii\framework\web\filters\CFilterChain.php(133): BannersController->runAction()
+#18 C:\xampp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\xampp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#20 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): BannersController->filterAccessControl()
+#21 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#22 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\xampp\yii\framework\web\CController.php(265): BannersController->runActionWithFilters()
+#24 C:\xampp\yii\framework\web\CWebApplication.php(282): BannersController->run()
+#25 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#26 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#27 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/index.php?r=banners/index
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\views\layouts\main.php (40)
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\views\layouts\column2.php (22)
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php (129)
+2013/10/23 18:22:29 [error] [php] Array to string conversion (C:\xampp\yii\framework\zii\widgets\CMenu.php:313)
+Stack trace:
+#0 C:\xampp\yii\framework\web\CBaseController.php(147): CMenu->init()
+#1 C:\xampp\yii\framework\web\CBaseController.php(180): BannersController->createWidget()
+#2 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\views\layouts\main.php(40): BannersController->widget()
+#3 C:\xampp\yii\framework\web\CBaseController.php(126): require()
+#4 C:\xampp\yii\framework\web\CBaseController.php(95): BannersController->renderInternal()
+#5 C:\xampp\yii\framework\web\widgets\CContentDecorator.php(76): BannersController->renderFile()
+#6 C:\xampp\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#7 C:\xampp\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#8 C:\xampp\yii\framework\web\CBaseController.php(214): CContentDecorator->run()
+#9 C:\xampp\yii\framework\web\CBaseController.php(308): BannersController->endWidget()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\views\layouts\column2.php(22): BannersController->endContent()
+#11 C:\xampp\yii\framework\web\CBaseController.php(126): require()
+#12 C:\xampp\yii\framework\web\CBaseController.php(95): BannersController->renderInternal()
+#13 C:\xampp\yii\framework\web\CController.php(784): BannersController->renderFile()
+#14 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php(129): BannersController->render()
+#15 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): BannersController->actionIndex()
+#16 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 C:\xampp\yii\framework\web\filters\CFilterChain.php(133): BannersController->runAction()
+#18 C:\xampp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\xampp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#20 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): BannersController->filterAccessControl()
+#21 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#22 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\xampp\yii\framework\web\CController.php(265): BannersController->runActionWithFilters()
+#24 C:\xampp\yii\framework\web\CWebApplication.php(282): BannersController->run()
+#25 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#26 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#27 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/index.php?r=banners/index
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\views\layouts\main.php (40)
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\views\layouts\column2.php (22)
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php (129)
+2013/10/23 18:22:30 [error] [php] Array to string conversion (C:\xampp\yii\framework\zii\widgets\CMenu.php:313)
+Stack trace:
+#0 C:\xampp\yii\framework\web\CBaseController.php(147): CMenu->init()
+#1 C:\xampp\yii\framework\web\CBaseController.php(180): SiteController->createWidget()
+#2 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\views\layouts\main.php(40): SiteController->widget()
+#3 C:\xampp\yii\framework\web\CBaseController.php(126): require()
+#4 C:\xampp\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#5 C:\xampp\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#6 C:\xampp\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#7 C:\xampp\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#8 C:\xampp\yii\framework\web\CBaseController.php(214): CContentDecorator->run()
+#9 C:\xampp\yii\framework\web\CBaseController.php(308): SiteController->endWidget()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\views\layouts\column1.php(6): SiteController->endContent()
+#11 C:\xampp\yii\framework\web\CBaseController.php(126): require()
+#12 C:\xampp\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#13 C:\xampp\yii\framework\web\CController.php(784): SiteController->renderFile()
+#14 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\SiteController.php(32): SiteController->render()
+#15 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#16 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 C:\xampp\yii\framework\web\CController.php(286): SiteController->runAction()
+#18 C:\xampp\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#19 C:\xampp\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#20 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/index.php?r=site/index
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\views\layouts\main.php (40)
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\views\layouts\column1.php (6)
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\SiteController.php (32)
+2013/10/23 18:22:33 [error] [php] Array to string conversion (C:\xampp\yii\framework\zii\widgets\CMenu.php:313)
+Stack trace:
+#0 C:\xampp\yii\framework\web\CBaseController.php(147): CMenu->init()
+#1 C:\xampp\yii\framework\web\CBaseController.php(180): BannersController->createWidget()
+#2 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\views\layouts\main.php(40): BannersController->widget()
+#3 C:\xampp\yii\framework\web\CBaseController.php(126): require()
+#4 C:\xampp\yii\framework\web\CBaseController.php(95): BannersController->renderInternal()
+#5 C:\xampp\yii\framework\web\widgets\CContentDecorator.php(76): BannersController->renderFile()
+#6 C:\xampp\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#7 C:\xampp\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#8 C:\xampp\yii\framework\web\CBaseController.php(214): CContentDecorator->run()
+#9 C:\xampp\yii\framework\web\CBaseController.php(308): BannersController->endWidget()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\views\layouts\column2.php(22): BannersController->endContent()
+#11 C:\xampp\yii\framework\web\CBaseController.php(126): require()
+#12 C:\xampp\yii\framework\web\CBaseController.php(95): BannersController->renderInternal()
+#13 C:\xampp\yii\framework\web\CController.php(784): BannersController->renderFile()
+#14 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php(129): BannersController->render()
+#15 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): BannersController->actionIndex()
+#16 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 C:\xampp\yii\framework\web\filters\CFilterChain.php(133): BannersController->runAction()
+#18 C:\xampp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\xampp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#20 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): BannersController->filterAccessControl()
+#21 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#22 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\xampp\yii\framework\web\CController.php(265): BannersController->runActionWithFilters()
+#24 C:\xampp\yii\framework\web\CWebApplication.php(282): BannersController->run()
+#25 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#26 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#27 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/index.php?r=banners/index
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\views\layouts\main.php (40)
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\views\layouts\column2.php (22)
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php (129)
+2013/10/23 18:29:42 [error] [php] Use of undefined constant getControler - assumed 'getControler' (C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php:130)
+Stack trace:
+#0 C:\xampp\yii\framework\web\filters\CFilterChain.php(133): BannersController->runAction()
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): BannersController->filterAccessControl()
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): BannersController->runActionWithFilters()
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): BannersController->run()
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/index.php?r=banners/index
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php (130)
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php (13)
+2013/10/23 18:29:53 [error] [exception.CException] exception 'CException' with message 'Property "BannersController.getControler" is not defined.' in C:\xampp\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php(130): CComponent->__get('getControler')
+#1 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): BannersController->actionIndex()
+#2 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\xampp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 C:\xampp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#11 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('banners/index')
+#12 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/admin/index.php?r=banners/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=banners/index
+---
+2013/10/23 18:30:32 [error] [exception.CException] exception 'CException' with message 'BannersController and its behaviors do not have a method or closure named "getControler".' in C:\xampp\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php(130): CComponent->__call('getControler', Array)
+#1 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php(130): BannersController->getControler()
+#2 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): BannersController->actionIndex()
+#3 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#12 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('banners/index')
+#13 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/index.php?r=banners/index
+---
+2013/10/23 18:30:37 [error] [exception.CException] exception 'CException' with message 'BannersController and its behaviors do not have a method or closure named "getControler".' in C:\xampp\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php(130): CComponent->__call('getControler', Array)
+#1 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php(130): BannersController->getControler()
+#2 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): BannersController->actionIndex()
+#3 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#12 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('banners/index')
+#13 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/index.php?r=banners/index
+---
+2013/10/23 18:32:42 [error] [exception.CException] exception 'CException' with message 'BannersController and its behaviors do not have a method or closure named "setRoute".' in C:\xampp\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php(145): CComponent->__call('setRoute', Array)
+#1 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php(145): BannersController->setRoute('hola')
+#2 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): BannersController->actionAdmin()
+#3 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#12 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('banners/admin')
+#13 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/index.php?r=banners/admin
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=banners/index
+---
+2013/10/23 18:33:06 [error] [exception.CException] exception 'CException' with message 'BannersController and its behaviors do not have a method or closure named "route".' in C:\xampp\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php(145): CComponent->__call('route', Array)
+#1 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php(145): BannersController->route('hola')
+#2 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): BannersController->actionAdmin()
+#3 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#12 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('banners/admin')
+#13 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/index.php?r=banners/admin
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=banners/index
+---
+2013/10/23 18:43:05 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('banners/index')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index-test.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index-test.php?r=banners/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index-test.php
+---
+2013/10/23 18:43:27 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('banners/index')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index-test.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index-test.php?r=banners/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index-test.php?r=prodCategorias/create
+---
+2013/10/23 18:43:37 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('banners/index')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index-test.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index-test.php?r=banners/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index-test.php?r=site/index
+---
+2013/10/23 18:43:39 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('banners/index')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index-test.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index-test.php?r=banners/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index-test.php?r=banners/index
+---
+2013/10/23 18:45:22 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('banners/index')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index-test.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index-test.php?r=banners/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index-test.php?r=productos/create
+---
+2013/10/23 20:43:36 [error] [php] Object of class CWebUser could not be converted to string (C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\SiteController.php:34)
+Stack trace:
+#0 C:\xampp\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\xampp\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\xampp\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/index.php
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\SiteController.php (34)
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php (13)
+2013/10/23 20:44:22 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.getIsAuthenticated" is not defined.' in C:\xampp\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CWebUser.php(146): CComponent->__get('getIsAuthentica...')
+#1 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\SiteController.php(34): CWebUser->__get('getIsAuthentica...')
+#2 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#8 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/admin/index.php
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=productos/index
+---
+2013/10/23 20:44:38 [error] [exception.CException] exception 'CException' with message 'CWebUser and its behaviors do not have a method or closure named "getIsAuthenticated".' in C:\xampp\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\SiteController.php(34): CComponent->__call('getIsAuthentica...', Array)
+#1 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\SiteController.php(34): CWebUser->getIsAuthenticated()
+#2 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#8 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/admin/index.php
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=productos/index
+---
+2013/10/23 20:46:03 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.propieties" is not defined.' in C:\xampp\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CWebUser.php(146): CComponent->__get('propieties')
+#1 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\SiteController.php(34): CWebUser->__get('propieties')
+#2 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#8 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/admin/index.php
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php
+---
+2013/10/23 20:46:17 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.password" is not defined.' in C:\xampp\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CWebUser.php(146): CComponent->__get('password')
+#1 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\SiteController.php(34): CWebUser->__get('password')
+#2 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#8 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/admin/index.php
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php
+---
+2013/10/23 21:44:05 [error] [exception.CException] exception 'CException' with message 'Property "CMenu.hasActiveChild" is not defined.' in C:\xampp\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\yii\framework\web\CWidgetFactory.php(161): CComponent->__set('hasActiveChild', true)
+#1 C:\xampp\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(BannersController), 'zii.widgets.CMe...', Array)
+#2 C:\xampp\yii\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.CMe...', Array)
+#3 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\views\layouts\main.php(47): CBaseController->widget('zii.widgets.CMe...', Array)
+#4 C:\xampp\yii\framework\web\CBaseController.php(126): require('C:\Users\E-LEAR...')
+#5 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Users\E-LEAR...', Array, true)
+#6 C:\xampp\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\Users\E-LEAR...', Array, true)
+#7 C:\xampp\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div class="spa...')
+#8 C:\xampp\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div class="spa...')
+#9 C:\xampp\yii\framework\web\CBaseController.php(214): COutputProcessor->run()
+#10 C:\xampp\yii\framework\web\CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#11 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\views\layouts\column2.php(22): CBaseController->endContent()
+#12 C:\xampp\yii\framework\web\CBaseController.php(126): require('C:\Users\E-LEAR...')
+#13 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Users\E-LEAR...', Array, true)
+#14 C:\xampp\yii\framework\web\CController.php(784): CBaseController->renderFile('C:\Users\E-LEAR...', Array, true)
+#15 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php(79): CController->render('create', Array)
+#16 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): BannersController->actionCreate()
+#17 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\xampp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#26 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('banners/create')
+#27 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#28 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/admin/index.php?r=banners/create
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=banners/index
+---
+2013/10/23 22:37:25 [error] [exception.CException] exception 'CException' with message 'Property "Usuarios.password_repeat" is not defined.' in C:\xampp\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('password_repeat')
+#1 C:\xampp\yii\framework\web\helpers\CHtml.php(2703): CActiveRecord->__get('password_repeat')
+#2 C:\xampp\yii\framework\web\helpers\CHtml.php(2426): CHtml::resolveValue(Object(Usuarios), 'password_repeat')
+#3 C:\xampp\yii\framework\web\helpers\CHtml.php(1802): CHtml::activeInputField('password', Object(Usuarios), 'password_repeat', Array)
+#4 C:\xampp\yii\framework\web\widgets\CActiveForm.php(835): CHtml::activePasswordField(Object(Usuarios), 'password_repeat', Array)
+#5 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\views\usuarios\_form.php(36): CActiveForm->passwordField(Object(Usuarios), 'password_repeat', Array)
+#6 C:\xampp\yii\framework\web\CBaseController.php(126): require('C:\Users\E-LEAR...')
+#7 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Users\E-LEAR...', Array, true)
+#8 C:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\Users\E-LEAR...', Array, true)
+#9 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\views\usuarios\create.php(18): CController->renderPartial('_form', Array)
+#10 C:\xampp\yii\framework\web\CBaseController.php(126): require('C:\Users\E-LEAR...')
+#11 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Users\E-LEAR...', Array, true)
+#12 C:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\Users\E-LEAR...', Array, true)
+#13 C:\xampp\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#14 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\UsuariosController.php(79): CController->render('create', Array)
+#15 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): UsuariosController->actionCreate()
+#16 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\xampp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 C:\xampp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#25 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/create')
+#26 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#27 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/admin/index.php?r=usuarios/create
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=usuarios/index
+---
+2013/10/23 23:07:00 [error] [exception.CException] exception 'CException' with message 'Property "Usuarios.user" is not defined.' in C:\xampp\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('user')
+#1 C:\xampp\yii\framework\validators\CUniqueValidator.php(82): CActiveRecord->__get('user')
+#2 C:\xampp\yii\framework\validators\CValidator.php(213): CUniqueValidator->validateAttribute(Object(Usuarios), 'user')
+#3 C:\xampp\yii\framework\base\CModel.php(159): CValidator->validate(Object(Usuarios), NULL)
+#4 C:\xampp\yii\framework\db\ar\CActiveRecord.php(808): CModel->validate(NULL)
+#5 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\UsuariosController.php(73): CActiveRecord->save()
+#6 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): UsuariosController->actionCreate()
+#7 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#16 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/create')
+#17 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/admin/index.php?r=usuarios/create
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=usuarios/create
+---
+2013/10/24 00:32:31 [error] [php] include(User.php): failed to open stream: No such file or directory (C:\xampp\yii\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\components\UserIdentity.php(20): spl_autoload_call()
+#1 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#2 C:\xampp\yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate()
+#3 C:\xampp\yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute()
+#4 C:\xampp\yii\framework\base\CModel.php(159): CInlineValidator->validate()
+#5 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\SiteController.php(96): LoginForm->validate()
+#6 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\SiteController.php(33): SiteController->actionLogin()
+#7 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\yii\framework\web\CController.php(286): SiteController->runAction()
+#10 C:\xampp\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 C:\xampp\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#12 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/index.php
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\components\UserIdentity.php (20)
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\models\LoginForm.php (52)
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\SiteController.php (96)
+2013/10/24 00:32:48 [error] [php] include(User.php): failed to open stream: No such file or directory (C:\xampp\yii\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\components\UserIdentity.php(20): spl_autoload_call()
+#1 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#2 C:\xampp\yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate()
+#3 C:\xampp\yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute()
+#4 C:\xampp\yii\framework\base\CModel.php(159): CInlineValidator->validate()
+#5 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\SiteController.php(96): LoginForm->validate()
+#6 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\SiteController.php(33): SiteController->actionLogin()
+#7 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\yii\framework\web\CController.php(286): SiteController->runAction()
+#10 C:\xampp\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 C:\xampp\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#12 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/index.php?r=site/index
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\components\UserIdentity.php (20)
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\models\LoginForm.php (52)
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\SiteController.php (96)
+2013/10/24 00:33:13 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('contenidos/inde...')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index.php?r=contenidos/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php
+---
+2013/10/24 00:33:17 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('banners/index')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index.php?r=banners/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=contenidos/index
+---
+2013/10/24 00:33:18 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('logos/index')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index.php?r=logos/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=banners/index
+---
+2013/10/24 00:33:28 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('prodCategorias/...')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index.php?r=prodCategorias/admin
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=prodCategorias/create
+---
+2013/10/24 00:34:00 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/admin')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index.php?r=usuarios/admin
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=usuarios/create
+---
+2013/10/24 00:42:27 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/admin')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index.php?r=usuarios/admin
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=usuarios/create
+---
+2013/10/24 00:42:29 [error] [exception.CException] exception 'CException' with message 'Property "CAccessRule.banners" is not defined.' in C:\xampp\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(115): CComponent->__set('banners', Array)
+#1 C:\xampp\yii\framework\web\CController.php(1144): CAccessControlFilter->setRules(Array)
+#2 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#5 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#7 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('banners/index')
+#8 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/admin/index.php?r=banners/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=usuarios/admin
+---
+2013/10/24 00:46:46 [error] [php] strtolower() expects parameter 1 to be string, object given (C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:115)
+Stack trace:
+#0 C:\xampp\yii\framework\web\CController.php(1144): CAccessControlFilter->setRules()
+#1 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): BannersController->filterAccessControl()
+#2 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#3 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#4 C:\xampp\yii\framework\web\CController.php(265): BannersController->runActionWithFilters()
+#5 C:\xampp\yii\framework\web\CWebApplication.php(282): BannersController->run()
+#6 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/index.php?r=banners/index
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php (13)
+2013/10/24 00:46:49 [error] [php] strtolower() expects parameter 1 to be string, object given (C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:115)
+Stack trace:
+#0 C:\xampp\yii\framework\web\CController.php(1144): CAccessControlFilter->setRules()
+#1 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): BannersController->filterAccessControl()
+#2 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#3 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#4 C:\xampp\yii\framework\web\CController.php(265): BannersController->runActionWithFilters()
+#5 C:\xampp\yii\framework\web\CWebApplication.php(282): BannersController->run()
+#6 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/index.php?r=banners/index
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php (13)
+2013/10/24 00:47:10 [error] [php] strtolower() expects parameter 1 to be string, object given (C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:115)
+Stack trace:
+#0 C:\xampp\yii\framework\web\CController.php(1144): CAccessControlFilter->setRules()
+#1 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): BannersController->filterAccessControl()
+#2 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#3 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#4 C:\xampp\yii\framework\web\CController.php(265): BannersController->runActionWithFilters()
+#5 C:\xampp\yii\framework\web\CWebApplication.php(282): BannersController->run()
+#6 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/index.php?r=banners/index
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php (13)
+2013/10/24 00:47:13 [error] [php] strtolower() expects parameter 1 to be string, object given (C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:115)
+Stack trace:
+#0 C:\xampp\yii\framework\web\CController.php(1144): CAccessControlFilter->setRules()
+#1 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): BannersController->filterAccessControl()
+#2 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#3 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#4 C:\xampp\yii\framework\web\CController.php(265): BannersController->runActionWithFilters()
+#5 C:\xampp\yii\framework\web\CWebApplication.php(282): BannersController->run()
+#6 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/index.php?r=banners/index
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php (13)
+2013/10/24 00:47:14 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('contenidos/inde...')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index.php?r=contenidos/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=banners/index
+---
+2013/10/24 00:47:18 [error] [php] strtolower() expects parameter 1 to be string, object given (C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:115)
+Stack trace:
+#0 C:\xampp\yii\framework\web\CController.php(1144): CAccessControlFilter->setRules()
+#1 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): BannersController->filterAccessControl()
+#2 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#3 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#4 C:\xampp\yii\framework\web\CController.php(265): BannersController->runActionWithFilters()
+#5 C:\xampp\yii\framework\web\CWebApplication.php(282): BannersController->run()
+#6 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/index.php?r=banners/index
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php (13)
+2013/10/24 00:48:09 [error] [php] strtolower() expects parameter 1 to be string, object given (C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:115)
+Stack trace:
+#0 C:\xampp\yii\framework\web\CController.php(1144): CAccessControlFilter->setRules()
+#1 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): BannersController->filterAccessControl()
+#2 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#3 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#4 C:\xampp\yii\framework\web\CController.php(265): BannersController->runActionWithFilters()
+#5 C:\xampp\yii\framework\web\CWebApplication.php(282): BannersController->run()
+#6 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/index.php?r=banners/index
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php (13)
+2013/10/24 00:48:22 [error] [php] array_map(): Argument #2 should be an array (C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:115)
+Stack trace:
+#0 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): BannersController->filterAccessControl()
+#1 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#2 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#3 C:\xampp\yii\framework\web\CController.php(265): BannersController->runActionWithFilters()
+#4 C:\xampp\yii\framework\web\CWebApplication.php(282): BannersController->run()
+#5 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/index.php?r=banners/index
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php (13)
+2013/10/24 00:48:49 [error] [exception.CException] exception 'CException' with message 'Usuarios and its behaviors do not have a method or closure named "fetch_all".' in C:\xampp\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\yii\framework\db\ar\CActiveRecord.php(227): CComponent->__call('fetch_all', Array)
+#1 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php(33): CActiveRecord->__call('fetch_all', Array)
+#2 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php(33): Usuarios->fetch_all()
+#3 C:\xampp\yii\framework\web\CController.php(1144): BannersController->accessRules()
+#4 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#9 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('banners/index')
+#10 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/admin/index.php?r=banners/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=contenidos/index
+---
+2013/10/24 00:49:07 [error] [php] array_map(): Argument #2 should be an array (C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:115)
+Stack trace:
+#0 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): BannersController->filterAccessControl()
+#1 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#2 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#3 C:\xampp\yii\framework\web\CController.php(265): BannersController->runActionWithFilters()
+#4 C:\xampp\yii\framework\web\CWebApplication.php(282): BannersController->run()
+#5 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/index.php?r=banners/index
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php (13)
+2013/10/24 00:49:10 [error] [php] array_map(): Argument #2 should be an array (C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:115)
+Stack trace:
+#0 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): BannersController->filterAccessControl()
+#1 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#2 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#3 C:\xampp\yii\framework\web\CController.php(265): BannersController->runActionWithFilters()
+#4 C:\xampp\yii\framework\web\CWebApplication.php(282): BannersController->run()
+#5 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/index.php?r=banners/index
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php (13)
+2013/10/24 00:49:21 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('contenidos/inde...')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index.php?r=contenidos/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=banners/index
+---
+2013/10/24 00:52:09 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/admin')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index.php?r=usuarios/admin
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=usuarios/index
+---
+2013/10/24 00:53:48 [error] [php] array_map(): Argument #2 should be an array (C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:115)
+Stack trace:
+#0 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): BannersController->filterAccessControl()
+#1 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#2 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#3 C:\xampp\yii\framework\web\CController.php(265): BannersController->runActionWithFilters()
+#4 C:\xampp\yii\framework\web\CWebApplication.php(282): BannersController->run()
+#5 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/index.php?r=banners/index
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php (13)
+2013/10/24 00:55:05 [error] [php] array_map(): Argument #2 should be an array (C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:115)
+Stack trace:
+#0 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): BannersController->filterAccessControl()
+#1 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#2 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#3 C:\xampp\yii\framework\web\CController.php(265): BannersController->runActionWithFilters()
+#4 C:\xampp\yii\framework\web\CWebApplication.php(282): BannersController->run()
+#5 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/index.php?r=banners/index
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php (13)
+2013/10/24 00:56:20 [error] [php] Trying to get property of non-object (C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php:130)
+Stack trace:
+#0 C:\xampp\yii\framework\web\filters\CFilterChain.php(133): BannersController->runAction()
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): BannersController->filterAccessControl()
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): BannersController->runActionWithFilters()
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): BannersController->run()
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/index.php?r=banners/index
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php (130)
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php (13)
+2013/10/24 00:57:48 [error] [php] Trying to get property of non-object (C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php:130)
+Stack trace:
+#0 C:\xampp\yii\framework\web\filters\CFilterChain.php(133): BannersController->runAction()
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): BannersController->filterAccessControl()
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): BannersController->runActionWithFilters()
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): BannersController->run()
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/index.php?r=banners/index
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php (130)
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php (13)
+2013/10/24 01:05:08 [error] [php] Trying to get property of non-object (C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php:130)
+Stack trace:
+#0 C:\xampp\yii\framework\web\filters\CFilterChain.php(133): BannersController->runAction()
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): BannersController->filterAccessControl()
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): BannersController->runActionWithFilters()
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): BannersController->run()
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/index.php?r=banners/index
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php (130)
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php (13)
+2013/10/24 01:07:30 [error] [php] Undefined index: username (C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php:131)
+Stack trace:
+#0 C:\xampp\yii\framework\web\filters\CFilterChain.php(133): BannersController->runAction()
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): BannersController->filterAccessControl()
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): BannersController->runActionWithFilters()
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): BannersController->run()
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/index.php?r=banners/index
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php (131)
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php (13)
+2013/10/24 01:09:51 [error] [php] Undefined index: username (C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php:131)
+Stack trace:
+#0 C:\xampp\yii\framework\web\filters\CFilterChain.php(133): BannersController->runAction()
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): BannersController->filterAccessControl()
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): BannersController->runActionWithFilters()
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): BannersController->run()
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/index.php?r=banners/index
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php (131)
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php (13)
+2013/10/24 18:01:36 [error] [php] array_keys() expects parameter 1 to be array, object given (C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php:131)
+Stack trace:
+#0 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\yii\framework\web\filters\CFilterChain.php(133): BannersController->runAction()
+#2 C:\xampp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#4 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): BannersController->filterAccessControl()
+#5 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#6 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\yii\framework\web\CController.php(265): BannersController->runActionWithFilters()
+#8 C:\xampp\yii\framework\web\CWebApplication.php(282): BannersController->run()
+#9 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/index.php?r=banners/index
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php (131)
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php (13)
+2013/10/24 18:02:05 [error] [php] array_keys() expects parameter 1 to be array, object given (C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php:132)
+Stack trace:
+#0 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\yii\framework\web\filters\CFilterChain.php(133): BannersController->runAction()
+#2 C:\xampp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#4 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): BannersController->filterAccessControl()
+#5 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#6 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\yii\framework\web\CController.php(265): BannersController->runActionWithFilters()
+#8 C:\xampp\yii\framework\web\CWebApplication.php(282): BannersController->run()
+#9 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/index.php?r=banners/index
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php (132)
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php (13)
+2013/10/24 18:03:45 [error] [php] array_keys() expects parameter 1 to be array, integer given (C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php:132)
+Stack trace:
+#0 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\yii\framework\web\filters\CFilterChain.php(133): BannersController->runAction()
+#2 C:\xampp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#4 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): BannersController->filterAccessControl()
+#5 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#6 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\yii\framework\web\CController.php(265): BannersController->runActionWithFilters()
+#8 C:\xampp\yii\framework\web\CWebApplication.php(282): BannersController->run()
+#9 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/index.php?r=banners/index
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php (132)
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php (13)
+2013/10/24 18:07:36 [error] [exception.CException] exception 'CException' with message 'Property "Usuarios.attibuttes" is not defined.' in C:\xampp\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('attibuttes')
+#1 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php(132): CActiveRecord->__get('attibuttes')
+#2 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): BannersController->actionIndex()
+#3 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#12 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('banners/index')
+#13 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/index.php?r=banners/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=banners/index
+---
+2013/10/24 18:09:23 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('contenidos/inde...')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index.php?r=contenidos/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=banners/index
+---
+2013/10/24 18:10:53 [error] [php] Undefined variable: uca (C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php:31)
+Stack trace:
+#0 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#1 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#2 C:\xampp\yii\framework\web\CController.php(265): BannersController->runActionWithFilters()
+#3 C:\xampp\yii\framework\web\CWebApplication.php(282): BannersController->run()
+#4 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/index.php?r=banners/index
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php (31)
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php (13)
+2013/10/24 18:12:53 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('contenidos/inde...')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index.php?r=contenidos/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=banners
+---
+2013/10/24 18:15:05 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('logos/index')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index.php?r=logos/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=contenidos/index
+---
+2013/10/24 18:15:19 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/admin')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index.php?r=usuarios/admin
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=usuarios/index
+---
+2013/10/24 18:20:12 [error] [exception.CDbException] exception 'CDbException' with message 'Table "usuarios" does not have a column named "prodcategorias".' in C:\xampp\yii\framework\db\schema\CDbCommandBuilder.php:694
+Stack trace:
+#0 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1538): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, Array, Array, '`t`.')
+#1 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\ProdCategoriasController.php(29): CActiveRecord->findAllByAttributes(Array, Array)
+#2 C:\xampp\yii\framework\web\CController.php(1144): ProdCategoriasController->accessRules()
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('prodCategorias/...')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index.php?r=prodCategorias/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=banners/index
+---
+2013/10/24 18:20:27 [error] [exception.CDbException] exception 'CDbException' with message 'Table "usuarios" does not have a column named "prod_categorias".' in C:\xampp\yii\framework\db\schema\CDbCommandBuilder.php:694
+Stack trace:
+#0 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1538): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, Array, Array, '`t`.')
+#1 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\ProdCategoriasController.php(29): CActiveRecord->findAllByAttributes(Array, Array)
+#2 C:\xampp\yii\framework\web\CController.php(1144): ProdCategoriasController->accessRules()
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('prodCategorias/...')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index.php?r=prodCategorias/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=banners/index
+---
+2013/10/24 18:21:39 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/admin')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index.php?r=usuarios/admin
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=usuarios/create
+---
+2013/10/24 18:31:31 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/admin')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index.php?r=usuarios/admin
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=usuarios/index
+---
+2013/10/24 18:34:01 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/admin')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index.php?r=usuarios/admin
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=usuarios/index
+---
+2013/10/24 18:45:28 [error] [exception.CDbException] exception 'CDbException' with message 'Table "usuarios" does not have a column named "usuario".' in C:\xampp\yii\framework\db\schema\CDbCommandBuilder.php:694
+Stack trace:
+#0 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1538): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, Array, Array, '`t`.')
+#1 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\UsuariosController.php(55): CActiveRecord->findAllByAttributes(Array, Array)
+#2 C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\UsuariosController.php(31): UsuariosController->users()
+#3 C:\xampp\yii\framework\web\CController.php(1144): UsuariosController->accessRules()
+#4 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#9 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/index')
+#10 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/admin/index.php?r=usuarios/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=usuarios/admin
+---
+2013/10/24 18:47:52 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/index')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index.php?r=usuarios/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=site/login
+---
+2013/10/24 18:47:56 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/index')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index.php?r=usuarios/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=usuarios/index
+---
+2013/10/24 18:48:04 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/index')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index.php?r=usuarios/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=productos/index
+---
+2013/10/24 18:51:17 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index.php?r=usuarios
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=site/login
+---
+2013/10/24 18:51:22 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/index')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index.php?r=usuarios/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=usuarios
+---
+2013/10/24 18:51:31 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/index')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index.php?r=usuarios/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=usuarios/index
+---
+2013/10/24 18:51:36 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/index')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index.php?r=usuarios/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=productos/index
+---
+2013/10/24 18:51:43 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/index')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index.php?r=usuarios/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=usuarios/index
+---
+2013/10/24 18:52:04 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/index')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index.php?r=usuarios/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php
+---
+2013/10/24 18:52:07 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/index')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index.php?r=usuarios/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=usuarios/index
+---
+2013/10/24 18:53:07 [error] [php] array_map(): Argument #2 should be an array (C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:115)
+Stack trace:
+#0 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): UsuariosController->filterAccessControl()
+#1 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#2 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#3 C:\xampp\yii\framework\web\CController.php(265): UsuariosController->runActionWithFilters()
+#4 C:\xampp\yii\framework\web\CWebApplication.php(282): UsuariosController->run()
+#5 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/index.php?r=usuarios/index
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php (13)
+2013/10/24 18:53:36 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/index')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index.php?r=usuarios/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=usuarios/index
+---
+2013/10/24 18:53:39 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/index')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index.php?r=usuarios/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=usuarios/index
+---
+2013/10/24 18:54:13 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/index')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index.php?r=usuarios/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=usuarios/index
+---
+2013/10/24 18:54:26 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/index')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index.php?r=usuarios/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=usuarios/index
+---
+2013/10/24 18:57:57 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/index')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index.php?r=usuarios/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=usuarios/index
+---
+2013/10/24 18:58:24 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/index')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index.php?r=usuarios/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=usuarios/index
+---
+2013/10/24 18:58:31 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/index')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index.php?r=usuarios/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=banners/index
+---
+2013/10/24 18:59:13 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/index')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index.php?r=usuarios/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=usuarios/index
+---
+2013/10/24 19:01:33 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/index')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index.php?r=usuarios/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=usuarios/index
+---
+2013/10/24 19:07:39 [error] [php] array_map(): Argument #2 should be an array (C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:115)
+Stack trace:
+#0 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): UsuariosController->filterAccessControl()
+#1 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#2 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#3 C:\xampp\yii\framework\web\CController.php(265): UsuariosController->runActionWithFilters()
+#4 C:\xampp\yii\framework\web\CWebApplication.php(282): UsuariosController->run()
+#5 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/index.php?r=usuarios/index
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php (13)
+2013/10/24 19:18:12 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/index')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index.php?r=usuarios/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=usuarios/index
+---
+2013/10/24 19:18:18 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/index')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index.php?r=usuarios/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=usuarios/index
+---
+2013/10/24 19:18:29 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/index')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index.php?r=usuarios/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=usuarios/index
+---
+2013/10/24 19:27:27 [error] [php] Undefined variable: users (C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php:45)
+Stack trace:
+#0 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#1 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#2 C:\xampp\yii\framework\web\CController.php(265): BannersController->runActionWithFilters()
+#3 C:\xampp\yii\framework\web\CWebApplication.php(282): BannersController->run()
+#4 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/index.php?r=banners/index
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php (45)
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php (13)
+2013/10/24 19:28:08 [error] [php] Undefined variable: users (C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php:45)
+Stack trace:
+#0 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#1 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#2 C:\xampp\yii\framework\web\CController.php(265): BannersController->runActionWithFilters()
+#3 C:\xampp\yii\framework\web\CWebApplication.php(282): BannersController->run()
+#4 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/index.php?r=banners/index
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php (45)
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php (13)
+2013/10/24 19:28:28 [error] [php] Undefined variable: users (C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php:45)
+Stack trace:
+#0 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#1 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#2 C:\xampp\yii\framework\web\CController.php(265): BannersController->runActionWithFilters()
+#3 C:\xampp\yii\framework\web\CWebApplication.php(282): BannersController->run()
+#4 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/index.php?r=banners/index
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php (45)
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php (13)
+2013/10/24 19:28:32 [error] [php] Undefined variable: users (C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php:45)
+Stack trace:
+#0 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#1 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#2 C:\xampp\yii\framework\web\CController.php(265): BannersController->runActionWithFilters()
+#3 C:\xampp\yii\framework\web\CWebApplication.php(282): BannersController->run()
+#4 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/index.php?r=banners/index
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\BannersController.php (45)
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php (13)
+2013/10/24 19:35:13 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('contenidos/inde...')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index.php?r=contenidos/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php
+---
+2013/10/24 19:38:56 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('contenidos/inde...')
+#9 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/index.php?r=contenidos/index
+HTTP_REFERER=http://local.noble.gle.mx/admin/index.php?r=contenidos/index
+---
+2013/10/24 19:39:03 [error] [php] Undefined variable: users (C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\LogosController.php:38)
+Stack trace:
+#0 C:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#1 C:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#2 C:\xampp\yii\framework\web\CController.php(265): LogosController->runActionWithFilters()
+#3 C:\xampp\yii\framework\web\CWebApplication.php(282): LogosController->run()
+#4 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/index.php?r=logos/index
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\protected\controllers\LogosController.php (38)
+in C:\Users\E-LEARNING4\Google Drive\noble\admin\index.php (13)
