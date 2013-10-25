@@ -29,7 +29,9 @@ class SiteController extends Controller
 	{
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
-		$this->render('index');
+		// change the view if loggedin @Pablo César Sánchez Porta pcsanchez@univermilenium.edu.mx 
+		if(Yii::app()->user->name=="Guest") $this->actionLogin();
+		else $this->render('index');
 	}
 
 	/**
