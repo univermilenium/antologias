@@ -34,6 +34,7 @@ class UserIdentity extends CUserIdentity
 			$i=0;
 			do{
 				$bind = ldap_bind($connection,$ldap_user[$i],$this->password);
+				Yii::app()->getSession()->add('ldap_user',$ldap_user[$i]);
 				$i++;
 			}while(!$bind && $i<count($ldap_user) );
 

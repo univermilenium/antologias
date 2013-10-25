@@ -31,7 +31,7 @@ class SiteController extends Controller
 		// using the default layout 'protected/views/layouts/main.php'		
 		if(!Yii::app()->user->isGuest) $this->render('index');
 		else $this->actionLogin();
-echo Yii::app()->user->name;
+// print_r(Yii::app()->getSession()->get('ldap_user'));
 	}
 
 	/**
