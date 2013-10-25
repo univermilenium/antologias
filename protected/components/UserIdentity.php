@@ -17,17 +17,30 @@ class UserIdentity extends CUserIdentity
 	 */
 	public function authenticate()
 	{
-		$users=array(
-			// username => password
-			'demo'=>'demo',
-			'admin'=>'admin',
-		);
-		if(!isset($users[$this->username]))
-			$this->errorCode=self::ERROR_USERNAME_INVALID;
-		elseif($users[$this->username]!==$this->password)
-			$this->errorCode=self::ERROR_PASSWORD_INVALID;
-		else
-			$this->errorCode=self::ERROR_NONE;
+		$options = Yii::app()->params['ldap'];
+		
+		$connection = ldap_connect($options['host']);
+		ldap_set_option($connection, LDAP_OPT_PROTOCOL_VERSION, 3);
+		ldap_set_option($connection, LDAP_OPT_REFERRALS, 0);
+		
+		if($connection)
+		{
+			$ldap_user = array();
+			foreach($options['ou'] as $op=>$ou){
+				foreach($options['o'] as $p=>$o){
+					$ldap_user[] = 'cn='.$this->username.',o='.$o.',ou='.$ou.',dc='.$options['dc'][0];
+				}
+			}
+			$i=0;
+			do{
+				$bind = ldap_bind($connection,$ldap_user[$i],$this->password);
+				Yii::app()->getSession()->add('ldap_user',$ldap_user[$i]);
+				$i++;
+			}while(!$bind && $i<count($ldap_user) );
+
+			if(!$bind) $this->errorCode = self::ERROR_PASSWORD_INVALID;
+			else $this->errorCode = self::ERROR_NONE;
+		}
 		return !$this->errorCode;
 	}
 }

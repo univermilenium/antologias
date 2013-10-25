@@ -1,5 +1,5 @@
 <?php
-
+error_reporting(0);
 // uncomment the following to define a path alias
 // Yii::setPathOfAlias('local','path/to/local-folder');
 
@@ -86,5 +86,11 @@ return array(
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'pcsanchez@univermilenium.edu.mx',
+		'ldap' => array(
+			'host' => 'ec2-54-234-158-172.compute-1.amazonaws.com',
+			'dc' => array('univer'),
+			'ou' => array('elearning', 'rayon', 'neza', 'ixtapa', 'hidalgo', 'salud'),
+			'o' => array('estudiante','profesor','coordinador','director','desing','it'),
+		),
 	),
 );
