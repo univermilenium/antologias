@@ -3,3 +3,4 @@ assets/
 files/
 *_notes/
 *desktop.ini
+protected/runtime/
