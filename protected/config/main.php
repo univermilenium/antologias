@@ -86,5 +86,11 @@ return array(
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'pcsp85@gmail.com',
+		'ldap' => array(
+			'host' => 'ec2-54-234-158-172.compute-1.amazonaws.com',
+			'dc' => array('univer'),
+			'ou' => array('elearning', 'rayon', 'neza', 'ixtapa', 'hidalgo', 'salud'),
+			'o' => array('estudiante','profesor','coordinador','director','desing','it'),
+		),
 	),
 );

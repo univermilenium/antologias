@@ -1,5 +1,5 @@
 <?php
-
+error_reporting(0);
 /**
  * UserIdentity represents the data needed to identity a user.
  * It contains the authentication method that checks if the provided
@@ -17,6 +17,34 @@ class UserIdentity extends CUserIdentity
 	 */
 	public function authenticate()
 	{
+		$options = Yii::app()->params['ldap'];
+		
+		$connection = ldap_connect($options['host']);
+		ldap_set_option($connection, LDAP_OPT_PROTOCOL_VERSION, 3);
+		ldap_set_option($connection, LDAP_OPT_REFERRALS, 0);
+		
+		if($connection)
+		{
+			$ldap_user = array();
+			foreach($options['ou'] as $op=>$ou){
+				foreach($options['o'] as $p=>$o){
+					$ldap_user[] = 'cn='.$this->username.',o='.$o.',ou='.$ou.',dc='.$options['dc'][0];
+				}
+			}
+			$i=0;
+			do{
+				$bind = ldap_bind($connection,$ldap_user[$i],$this->password);
+				$i++;
+			}while(!$bind && $i<count($ldap_user) );
+
+			if(!$bind) $this->errorCode = self::ERROR_PASSWORD_INVALID;
+			else $this->errorCode = self::ERROR_NONE;
+		}
+		return !$this->errorCode;
+		
+		
+		/**
+		* MySQL authentication
 		$user = Usuarios::model()->findByAttributes(array('username' => $this->username));
 		
 		if($user===null)
@@ -28,7 +56,11 @@ class UserIdentity extends CUserIdentity
 		else
 			$this->errorCode=self::ERROR_PASSWORD_INVALID;
 		return !$this->errorCode;
+		
+		*/
+		
 		/**
+		* default authentication
 		$users=array(
 			// username => password
 			'demo'=>'demo',
